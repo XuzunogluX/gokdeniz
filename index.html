@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gökdeniz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css"></link>
+  </head>
+  <body>
+    <div>
+      <h1>Çeviri Oyunu</h1>
+      <p id="description">Çalışmak istediğiniz üniteyi seçin.</p>
+    </div><br>
+    <div id="selectUnit">
+      <button onclick="unitChange(0)">Ünite 1<br><span style="font-size: 15px">ronaldolar</span></button>
+      <button onclick="unitChange(1)">Ünite 2<br><span style="font-size: 15px">ronaldolar</span></button><br>
+      <button onclick="unitChange(2)">Ünite 3<br><span style="font-size: 15px">ronaldolar</span></button>
+      <button onclick="unitChange(3)">Ünite 4<br><span style="font-size: 15px">ronaldolar</span></button><br>
+      <button onclick="unitChange(4)">Ünite 5<br><span style="font-size: 15px">ronaldolar</span></button>
+      <button onclick="unitChange(5)">Ünite 6<br><span style="font-size: 15px">ronaldolar</span></button><br>
+      <button onclick="unitChange(6)">Ünite 7<br><span style="font-size: 15px">ronaldolar</span></button>
+      <button onclick="unitChange(7)">Ünite 8<br><span style="font-size: 15px">ronaldolar</span></button><br>
+      <button onclick="unitChange(8)">Ünite 9<br><span style="font-size: 15px">ronaldolar</span></button>
+      <button onclick="unitChange(9)" style="padding :10px 8px">Ünite 10<br><span style="font-size: 15px">ronaldolar</span></button>
+    </div>
+    <div id="gameScreen" style="display: none">
+      <h1 id="word"></h1>
+      <input id="answer" type="text"/>
+      <button class="giris" onclick="control()">Giriş</button>
+    </div>
+    <div id="finish" style="display: none">
+      <h1>Üniteyi Bitirdin!</h1>
+      <button onclick="playAgain()">Yeniden Başla</button><br><button onclick="unitSelect()">Ünite Seç</button>
+    </div>
+    <div id="credit" style="display: none"><br>
+      <table>
+        <tr>
+          <td>Web Designer</td>
+          <td>Gökdeniz Uzunoğlu</td>
+        </tr>
+        <tr>
+          <td>Graphic Designer</td>
+          <td>Gökdeniz Uzunoğlu</td>
+        </tr>
+        <tr>
+          <td>Front End Developer</td>
+          <td>Gökdeniz Uzunoğlu</td>
+        </tr>
+        <tr>
+          <td>Back End Developer</td>
+          <td>Gökdeniz Uzunoğlu</td>
+        </tr>
+        <tr>
+          <td>UI Designer</td>
+          <td>Gökdeniz Uzunoğlu</td>
+        </tr>
+        <tr>
+          <td>UX Designer</td>
+          <td>Gökdeniz Uzunoğlu</td>
+        </tr>
+        <tr>
+          <td>Art Director</td>
+          <td>Gökdeniz Uzunoğlu</td>
+        </tr>
+        <tr>
+          <td>Web Project Manager</td>
+          <td>Gökdeniz Uzunoğlu</td>
+        </tr>
+        <tr>
+          <td>Product Manager</td>
+          <td>Gökdeniz Uzunoğlu</td>
+        </tr>
+        <tr>
+          <td>SEO Specialist</td>
+          <td>Gökdeniz Uzunoğlu</td>
+        </tr>
+      </table>
+    </div>
+    <button id="creditButton" class="credit" onclick="credit()
+    ">Emeği Geçenler</button>
+    <button id="mainMenuButton" class="credit" style="display: none" onclick="mainMenu()">Ana sayfa</button>
+    <img id="image" class="image"/>
+  </body>
+</html>
